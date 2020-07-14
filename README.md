@@ -9,7 +9,7 @@ ideal for creating browser games.
 ## How to use it
 1. Include the `main.js` script on your page using the `<script>` tag.
 1. Use `hold.add()` to start listening for a specific key. Additionally, include
-the repeat speed you want the function associated with that key.
+the repeat speed (in milliseconds) and the function associated with that key.
 
     ```js
     hold.add('f', 1000, () => {
