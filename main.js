@@ -42,8 +42,9 @@ let hold = {
     };
     console.log(keys);
   },
-  remove: function() {
-    console.log('testing remove');
+  remove: function(key) {
+    console.log("removed " + key);
+    delete keys[key];
   }
 }
 

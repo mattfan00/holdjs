@@ -5,6 +5,7 @@
     <script src="../main.js"></script>
   </head>
   <body>
+    <button onclick="removeE()">Remove 'e'</button>
     
     <script>
       hold.add('e', 1000, () => {
@@ -14,6 +15,11 @@
       hold.add('d', 1000, () => {
         console.log('pressed d');
       })
+
+      function removeE() {
+        hold.remove('e');
+      }
+
     </script>
   </body>
 </html>
