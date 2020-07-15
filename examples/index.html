@@ -16,6 +16,10 @@
         console.log('pressed d');
       })
 
+      hold.add('left', 1000, () => {
+        console.log('pressed left arrow key');
+      })
+
       function removeE() {
         hold.remove('e');
       }

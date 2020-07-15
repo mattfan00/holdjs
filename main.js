@@ -1,5 +1,12 @@
 let keys = {};
 
+let mappings = {
+  'left': 'ArrowLeft',
+  'right': 'ArrowRight',
+  'up': 'ArrowUp',
+  'down': 'ArrowDown',
+}
+
 document.addEventListener('keydown', (e) => {
   if (!(e.key in keys)) {
     return true;
@@ -32,9 +39,17 @@ document.addEventListener('keyup', (e) => {
   }
 })
 
+function convertMap(key) {
+  if (key in mappings) {
+    return mappings[key];
+  } else {
+    return key;
+  }
+}
+
 let hold = {
   add: function(key, time, action) {
-    keys[key] = {
+    keys[convertMap(key)] = {
       time,
       action,
       interval: null,
@@ -47,6 +62,8 @@ let hold = {
     delete keys[key];
   }
 }
+
+
 
 
 
