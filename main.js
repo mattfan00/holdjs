@@ -48,14 +48,17 @@ function convertMap(key) {
 }
 
 let hold = {
-  add: function(key, time, action) {
-    keys[convertMap(key)] = {
-      time,
-      action,
-      interval: null,
-      pressed: false
-    };
-    console.log(keys);
+  add: function(inputs, time, action) {
+    inputs = inputs.split(" ").map(input => convertMap(input));
+    console.log(inputs);
+    for (key of inputs) {
+      keys[key] = {
+        time,
+        action,
+        interval: null,
+        pressed: false
+      };
+    }
   },
   remove: function(key) {
     console.log("removed " + key);
