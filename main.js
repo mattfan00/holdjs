@@ -5,6 +5,7 @@ let mappings = {
   'right': 'ArrowRight',
   'up': 'ArrowUp',
   'down': 'ArrowDown',
+  'space': ' '
 }
 
 document.addEventListener('keydown', (e) => {

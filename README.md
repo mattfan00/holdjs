@@ -24,13 +24,14 @@ the repeat speed (in milliseconds) and the function associated with that key.
     ```
 
 ## What keys can you listen to?
-- Works for arrow keys! 
+- Works for keys commonly used in browser games! 
 
     ```js
     hold.add('left', 100, () => { console.log('Left arrow key!') });
     hold.add('right', 100, () => { console.log('Right arrow key!') });
     hold.add('up', 100, () => { console.log('Up arrow key!') });
     hold.add('down', 100, () => { console.log('Down arrow key!') });
+    hold.add('space', 100, () => { console.log('Spacebar key!') });
     ```
 
 - Chain keys together! 
