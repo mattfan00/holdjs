@@ -4,7 +4,6 @@
 
     <link rel="stylesheet" href="index.css">
     <script src="../main.js"></script>
-    <script src="index.js"></script>
   </head>
   <body>
 
@@ -16,12 +15,14 @@
           for a held down key, ideal for browser games.  
         </p>
         <p>
-          Try holding down the wasd keys in the demo below. When held down, each key will 
-          register every half a second, regardless of your browser or system settings.
+          Try holding down the "wasd" keys in the demo below. When held down, each key will 
+          register every 50 milliseconds, regardless of your browser or system settings.
         </p>
       </div>
+      <canvas id="game" width=300 height=200></canvas>
     </div>
     
 
+    <script src="index.js"></script>
   </body>
 </html>

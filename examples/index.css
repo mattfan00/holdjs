@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 8rem;
+  margin-top: 7rem;
 }
 
 .header {
@@ -21,4 +21,9 @@ body {
 .caption {
   font-size: .9rem;
   width: 27rem;
+  margin-bottom: 1.5rem;
+}
+
+#game {
+  border: 1px solid #777;
 }
