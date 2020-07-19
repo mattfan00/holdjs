@@ -13,8 +13,6 @@ document.addEventListener('keydown', (e) => {
     return true;
   }
   
-  // console.log(keys);
-  
   let key = keys[e.key]; 
   
   if (!key.pressed) {
@@ -51,7 +49,6 @@ function convertMap(key) {
 let hold = {
   add: function(inputs, time, action) {
     inputs = inputs.split(" ").map(input => convertMap(input));
-    console.log(inputs);
     for (key of inputs) {
       keys[key] = {
         time,
@@ -62,7 +59,6 @@ let hold = {
     }
   },
   remove: function(key) {
-    console.log("removed " + key);
     delete keys[key];
   }
 }
