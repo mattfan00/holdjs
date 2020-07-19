@@ -4,7 +4,7 @@ hold.js is a Javascript library that brings the feel of a native application to 
 Traditionally, when you hold down a key in the browser, the operating system 
 chooses the repeat speed of the character. However, hold.js gives the developer 
 the freedom of setting the repeat speed in an easy to use library. hold.js is 
-ideal for creating browser games. 
+ideal for creating browser games.
 
 ## How to use it
 1. Include the `main.js` script on your page using the `<script>` tag.
@@ -23,7 +23,7 @@ the repeat speed (in milliseconds) and the function associated with that key.
     hold.remove('f');
     ```
 
-## What keys can you listen to?
+## Features?
 - Works for keys commonly used in browser games! 
 
     ```js

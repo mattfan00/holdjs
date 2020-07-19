@@ -2,34 +2,26 @@
 <html>
   <head>
 
+    <link rel="stylesheet" href="index.css">
     <script src="../main.js"></script>
+    <script src="index.js"></script>
   </head>
   <body>
-    <button onclick="removeE()">Remove 'e'</button>
+
+    <div class="main">
+      <div class="header">hold.js</div>
+      <div class="caption">
+        <p>
+          A simple Javascript library that makes it easier to manually set the repeat rate
+          for a held down key, ideal for browser games.  
+        </p>
+        <p>
+          Try holding down the wasd keys in the demo below. When held down, each key will 
+          register every half a second, regardless of your browser or system settings.
+        </p>
+      </div>
+    </div>
     
-    <script>
-      /*
-      hold.add('e', 1000, () => {
-        console.log('pressed e');
-      })
 
-      hold.add('d', 1000, () => {
-        console.log('pressed d');
-      })
-
-      hold.add('left', 1000, () => {
-        console.log('pressed left arrow key');
-      })
-
-*/
-      function removeE() {
-        hold.remove('e');
-      }
-
-      hold.add('a s d left space', 500, () => {
-        console.log('pressed');
-      });
-
-    </script>
   </body>
 </html>
