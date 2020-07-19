@@ -1,8 +1,13 @@
+:root {
+  --background-color: #f7f7f7; 
+  --font-color: #777
+}
+
 body {
   margin: 0;
-  background-color: #f7f7f7;
+  background-color: var(--background-color);
   font-family: avenir next;
-  color:#777;
+  color: var(--font-color);
 }
 
 .main {
@@ -25,5 +30,18 @@ body {
 }
 
 #game {
-  border: 1px solid #777;
+  border: 1px solid var(--font-color);
+}
+
+.github {
+  margin-top: 3rem;
+  font-size: 1.25rem;
+}
+
+.github a {
+  color: var(--font-color);
+}
+
+.github a:hover {
+  color: rgb(167, 167, 167);
 }

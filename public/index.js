@@ -13,8 +13,8 @@ ctx.scale(BLOCK_SIZE, BLOCK_SIZE);
 
 // INITIALIZATION
 let block = {
-  x: 15,
-  y: 9  
+  x: 0,
+  y: 0  
 }
 
 draw()
