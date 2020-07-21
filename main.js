@@ -50,6 +50,8 @@ let hold = {
   add: function(inputs, time, action) {
     inputs = inputs.split(" ").map(input => convertMap(input));
     for (key of inputs) {
+      delete keys[key];
+
       keys[key] = {
         time,
         action,

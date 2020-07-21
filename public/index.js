@@ -50,6 +50,6 @@ hold.add('right', SPEED, () => {
 
 function draw() {
   ctx.clearRect(0, 0, X_MAX, Y_MAX);
-  ctx.fillStyle = '#fcba75';
+  ctx.fillStyle = '#e49e00';
   ctx.fillRect(block.x, block.y, 1, 1);
 }
