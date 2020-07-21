@@ -10,7 +10,7 @@ ideal for creating browser games.
 1. Include `hold.js` in your application 
 
     ```html
-    <script src="https://cdn.jsdelivr.net/gh/mattfan00/holdjs/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mattfan00/holdjs@latest/main.js"></script>
     ```
 
 1. Use `hold.add()` to start listening for a specific key. Additionally, include

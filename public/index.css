@@ -29,6 +29,34 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.speeds {
+  font-size: .9rem;
+  display: flex;
+  justify-content: space-between;
+  width: 16rem;
+  margin-bottom: 1.25rem;
+}
+
+.speeds div {
+  text-align: center;
+  width: 3rem;
+}
+
+input {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  padding: 5px 12px;
+  border-radius: 7px;
+}
+
+input:checked + label {
+  background-color: red
+}
+
+
 #game {
   border: 1px solid var(--font-color);
 }

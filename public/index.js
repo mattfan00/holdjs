@@ -1,6 +1,3 @@
-console.log('hi');
-
-
 // CONSTANTS
 const BLOCK_SIZE = 10;
 const Y_MAX = 21;
