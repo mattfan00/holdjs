@@ -3,8 +3,8 @@ console.log('hi');
 
 // CONSTANTS
 const BLOCK_SIZE = 10;
-const Y_MAX = 20;
-const X_MAX = 30;
+const Y_MAX = 21;
+const X_MAX = 31;
 const SPEED = 100;
 
 const canvas = document.getElementById('game');
@@ -13,35 +13,35 @@ ctx.scale(BLOCK_SIZE, BLOCK_SIZE);
 
 // INITIALIZATION
 let block = {
-  x: 0,
-  y: 0  
+  x: 15,
+  y: 10  
 }
 
 draw()
 
 // GAME
-hold.add('w', SPEED, () => {
+hold.add('up', SPEED, () => {
   if (block.y - 1 >= 0) {
     block.y -= 1;
     draw();
   }
 })
 
-hold.add('a', SPEED, () => {
+hold.add('left', SPEED, () => {
   if (block.x - 1 >= 0) {
     block.x -= 1;
     draw();
   }
 })
 
-hold.add('s', SPEED, () => {
+hold.add('down', SPEED, () => {
   if (block.y + 1 < Y_MAX) {
     block.y += 1;
     draw();
   }
 })
 
-hold.add('d', SPEED, () => {
+hold.add('right', SPEED, () => {
   if (block.x + 1 < X_MAX) {
     block.x += 1;
     draw();
@@ -50,6 +50,6 @@ hold.add('d', SPEED, () => {
 
 function draw() {
   ctx.clearRect(0, 0, X_MAX, Y_MAX);
-  ctx.fillStyle = '#777';
+  ctx.fillStyle = '#fcba75';
   ctx.fillRect(block.x, block.y, 1, 1);
 }
